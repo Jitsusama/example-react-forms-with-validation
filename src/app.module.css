@@ -1,0 +1,78 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1em;
+}
+
+.form label > p {
+    margin: 0 0 .25em;
+}
+
+.form button {
+    font-size: inherit;
+    margin-top: .5em;
+    box-shadow: 1px 1px 0 var(--gray-dark);
+    border: 1px solid var(--gray-light);
+    border-radius: .3em;
+    padding: 0.3em 0.6em;
+    font-family: inherit;
+    font-weight: 500;
+}
+
+.form button:active {
+    outline: none;
+    position: relative;
+    left: 1px;
+    top: 1px;
+    box-shadow: inset 1px 1px 0 var(--gray-dark)
+}
+
+.form button:focus:not(:active) {
+    outline: none;
+    box-shadow: 0 0 2px var(--orange);
+    border-color: var(--orange);
+}
+
+.form input {
+    outline: none;
+    font-size: inherit;
+    font-family: inherit;
+    box-shadow: 0 0 1px var(--gray-dark);
+    border: 1px solid var(--gray-light);
+    border-radius: .3em;
+    height: 2em;
+    padding: 0 .4em;
+}
+
+.form span {
+    position: relative;
+}
+
+.form span svg {
+    position: absolute;
+    top: .08em;
+    right: .5em;
+    height: 16px;
+    width: 18px;
+    cursor: text;
+    color: var(--gray-light);
+}
+
+.valid input:focus {
+    box-shadow: 0 0 2px var(--orange);
+    border-color: var(--orange);
+}
+
+.valid input:focus ~ span svg {
+    color: var(--orange);
+}
+
+.invalid input:focus {
+    box-shadow: 0 0 2px var(--red);
+    border-color: var(--red);
+}
+
+.invalid input:focus ~ span svg {
+    color: var(--red);
+}
