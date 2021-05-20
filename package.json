@@ -1,6 +1,6 @@
 {
-  "name": "react-forms",
-  "version": "0.1.0",
+  "name": "react-forms-with-validation",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "react": "^17.0.2",
